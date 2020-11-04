@@ -34,15 +34,16 @@ Configuração Drives java Amazon
 ### Realizar instalação do goldengate for bigdata.
 
 Link para baixar o GoldenGate for BigData.
+
 	https://www.oracle.com/br/middleware/technologies/goldengate-downloads.html
 
 Após baixar os arquivos necessários, seguir os passos abaixo para realizar instalação.
 
 mkdir -p /home/oracle/ggd
 
-cd /home/oracle/ggd
-	unzip -oq /tmp/OGG_BigData_Linux_x64_19.1.0.0.5.zip
-	tar -xvf OGG_BigData_Linux_x64_19.1.0.0.5.tar
+	cd /home/oracle/ggd
+		unzip -oq /tmp/OGG_BigData_Linux_x64_19.1.0.0.5.zip
+		tar -xvf OGG_BigData_Linux_x64_19.1.0.0.5.tar
 
 
 ## Definir variaveis de ambiente
