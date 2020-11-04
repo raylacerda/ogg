@@ -49,12 +49,14 @@ mkdir -p /home/oracle/ggd
 ## Definir variaveis de ambiente
 
 criar um arquivo /home/oracle/.oggd_env com as variaveis do goldengate for bigdata
+	
 	export OGG_HOME=/home/oracle/ggd
 	export JAVA_HOME=/u01/app/oracle/product/jdk/jdk1.8.0_261
 	export PATH=$JAVA_HOME/bin:$PATH
 	export LD_LIBRARY_PATH=$JAVA_HOME/jre/lib/amd64/server:$LD_LIBRARY_PATH
 
 criar um arquivo /home/oracle/.ogg_env com as variaveis do goldengate for oracle database
+	
 	export OGG_HOME=/u01/app/oracle/product/gg
 	export JAVA_HOME=/u01/app/oracle/product/jdk/jdk1.8.0_261
 	export PATH=$JAVA_HOME/bin:$PATH
@@ -135,6 +137,7 @@ start mgr
 No OGG Oracle:
 =========
 Criar wallet para guardar acessos
+	
 	CREATE WALLET
 	ADD CREDENTIALSTORE
 	alter credentialstore add user ogg@DBOGG alias ogg_source
@@ -198,6 +201,7 @@ edit param esnow
 	TABLE PROTHEUS.PCG040;
 
 Parametros para o pump
+
 	Add extract dsnow, EXTTRAILSOURCE /home/oracle/ogg/dirdat/ss
 	add rmttrail /home/oracle/ogg/dirdat/sf, extract dsnow
 
