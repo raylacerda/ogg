@@ -1,7 +1,6 @@
 # Oracle Database to Amazon S3 Replication via Oracle Golden Gate for BigData
 ___
-- O passo a passo, está levando em concideração do goldendate já configurado no lado ORACLE.
-- Obs.: Este passo a passo foi desenvolvido por mim (Ray Lacerda).
+- O passo a passo, está levando em consideração do goldendate já configurado no lado ORACLE.
 
 ## Escopo
 	Será Replicado do banco de dados ORACLE para Amazon s3 no formato JSON.
@@ -33,8 +32,6 @@ Configuração Drives java Amazon
 
 
 ### Realizar instalação do goldengate for bigdata.
-
-Nesse passo a passo, estou levando em consideração a instalação do goldengate for oracle já feita anteriormente.
 
 Link para baixar o GoldenGate for BigData.
 	https://www.oracle.com/br/middleware/technologies/goldengate-downloads.html
@@ -219,6 +216,7 @@ edit param dsnow
 No OGG BDA:
 =========
 Parametros para o replicat
+
 	add replicat rsnow  exttrail /home/oracle/ogg/dirdat/sf
 
 	edit param rsnow
@@ -260,7 +258,6 @@ vi dirprm/rsnow.properties
 	gg.log.level=DEBUG
 	javawriter.bootoptions=-Xmx512m -Xms32m -Djava.class.path=.:ggjava/ggjava.jar -Daws.accessKeyId=SUA_KEY -Daws.secretKey=SUA_SECRET
 
-- Irei disponibilizar os jars ultilizados na configuração acima.
 
 # Iniciar os processos de replicação.
 
