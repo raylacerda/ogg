@@ -283,7 +283,3 @@ No OGG BDA:
 Acompanhar informações intial load
 	
 	GGSCI> INFO INITEX
-
-[Teste Link](img/ogg_bd.jpg)
-
-##https://github.com/raylacerda/ogg/blob/main/img/ogg_bd.jpg
